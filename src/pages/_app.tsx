@@ -1,6 +1,13 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import AppReduxProvider from "providers/AppReduxProvider";
+import type { FC } from "react";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const App: FC<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <AppReduxProvider>
+      <Component {...pageProps} />
+    </AppReduxProvider>
+  );
+};
+
+export default App;
