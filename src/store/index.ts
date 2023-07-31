@@ -1,14 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import createSagaMiddleware from "redux-saga";
 import restaurantReducer from "store/slices/restauratSlice";
 
-const sagaMiddleware = createSagaMiddleware();
-
 const store = configureStore({
-  reducer: { restaurant: restaurantReducer },
-  middleware: (getDefaultMiddleware) => {
-    return [...getDefaultMiddleware(), sagaMiddleware];
-  }
+  reducer: { restaurant: restaurantReducer }
 });
 
 export type RootState = ReturnType<typeof store.getState>;

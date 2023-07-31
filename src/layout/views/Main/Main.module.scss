@@ -1,13 +1,12 @@
 @import "styles/main";
 
 .wrapper {
-  @extend .mark;
   display: flex;
-  flex-direction: column;
+  height: 100svh;
   max-width: $screen-sm;
-  max-height: 100svh;
-  min-height: 100svh;
-  overflow-y: auto;
-  margin: auto;
-  padding-inline: 1rem;
+  margin-inline: auto;
+
+  & > :first-child {
+    width: 100%;
+  }
 }

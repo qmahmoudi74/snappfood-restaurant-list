@@ -20,12 +20,13 @@
     "normalize.css": "^8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
     "react-redux": "^8.1.2",
-    "redux-saga": "^1.2.3",
     "typescript": "5.1.6"
   },
   "devDependencies": {
     "prettier": "^3.0.0",
-    "sass": "^1.64.1"
+    "sass": "^1.64.1",
+    "sharp": "^0.32.4"
   }
 }

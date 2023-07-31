@@ -4,5 +4,3 @@ declare type GetVendorsListParams = {
   lat: number;
   long: number;
 };
-
-declare type GetVendorsListResponse = {};

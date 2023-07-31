@@ -3,3 +3,31 @@
 ::before {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+@media screen and (max-width: 30em) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+:root {
+  direction: rtl;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

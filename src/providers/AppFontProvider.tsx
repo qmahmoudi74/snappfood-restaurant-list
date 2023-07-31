@@ -2,7 +2,7 @@ import type { FC, PropsWithChildren } from "react";
 import localFont from "next/font/local";
 
 const vazirmatn = localFont({
-  src: "./Vazirmatn[wght].woff2",
+  src: "../local-assets/fonts/Vazirmatn[wght].woff2",
   display: "swap",
   preload: true
 });
