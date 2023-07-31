@@ -1,20 +1,13 @@
 import client from "services/client";
 
-export interface GetVendorsListParams {
-  page: number;
-  page_size: number;
-  lat: number;
-  long: number;
-}
-
-export interface GetVendorsListResponse {}
-
+// GET VENDORS LIST
 const getVendorsListURL = "/restaurant/vendors-list";
 
 export const getVendorsList = async (params: GetVendorsListParams) => {
   const data = await client<GetVendorsListResponse>({
-    params,
-    url: getVendorsListURL
+    method: "GET",
+    url: getVendorsListURL,
+    params
   });
 
   return data;

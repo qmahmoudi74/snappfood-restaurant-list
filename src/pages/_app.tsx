@@ -1,3 +1,4 @@
+import Layout from "layout";
 import type { AppProps } from "next/app";
 import AppFontProvider from "providers/AppFontProvider";
 import AppReduxProvider from "providers/AppReduxProvider";
@@ -7,7 +8,9 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <AppFontProvider>
       <AppReduxProvider>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </AppReduxProvider>
     </AppFontProvider>
   );

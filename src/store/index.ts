@@ -6,7 +6,9 @@ const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
   reducer: { restaurant: restaurantReducer },
-  middleware: [sagaMiddleware]
+  middleware: (getDefaultMiddleware) => {
+    return [...getDefaultMiddleware(), sagaMiddleware];
+  }
 });
 
 export type RootState = ReturnType<typeof store.getState>;
