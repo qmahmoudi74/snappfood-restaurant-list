@@ -6,4 +6,4 @@ const nextConfig = {
   env: { BASE_URL }
 };
 
-export default nextConfig;
+module.exports = nextConfig;

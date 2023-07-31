@@ -1,0 +1,12 @@
+@import "styles/variables";
+
+.mark {
+  outline: 1px solid black;
+  outline-offset: -1px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

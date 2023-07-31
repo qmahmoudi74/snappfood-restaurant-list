@@ -13,7 +13,7 @@ const AppFontProvider: FC<PropsWithChildren> = ({ children }) => {
       <style jsx={true} global={true}>
         {`
           :root {
-            font-family: (${vazirmatn.style.fontFamily}), sans-serif;
+            font-family: ${vazirmatn.style.fontFamily}, sans-serif;
           }
         `}
       </style>

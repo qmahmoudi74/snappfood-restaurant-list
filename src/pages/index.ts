@@ -1,2 +1,2 @@
-import HomePage from "containers/home-page";
+import HomePage from "containers/home";
 export default HomePage;

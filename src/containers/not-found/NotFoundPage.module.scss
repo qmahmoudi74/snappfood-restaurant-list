@@ -1,0 +1,9 @@
+@import "styles/main";
+
+.wrapper {
+  @extend .center;
+  line-height: 2;
+  text-align: center;
+  padding: 2rem;
+  margin: auto;
+}
