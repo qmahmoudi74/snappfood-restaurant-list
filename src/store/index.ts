@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
+import restaurantReducer from "store/slices/restauratSlice";
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
-  reducer: {},
+  reducer: { restaurant: restaurantReducer },
   middleware: [sagaMiddleware]
 });
 

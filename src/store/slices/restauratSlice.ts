@@ -21,3 +21,5 @@ const restaurantSlice = createSlice({
   initialState,
   reducers: {}
 });
+
+export default restaurantSlice.reducer;
